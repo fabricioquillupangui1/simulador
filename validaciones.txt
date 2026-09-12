@@ -1,0 +1,11 @@
+Prompt principal
+
+Actúa como un desarrollador web experto en frontend. Necesito que actualices mi Simulador de Crédito para implementar un sistema robusto de validaciones en JavaScript.
+
+Reglas a implementar:
+- Las validaciones deben ejecutarse únicamente al presionar el botón de cálculo ("Calcular Crédito").
+- Verificar campos obligatorios, tipos de datos numéricos válidos, y rangos lógicos (montos mínimos/máximos, plazos y tasas de interés).
+- Los mensajes de error deben mostrarse de forma dinámica directamente debajo de cada input correspondiente.
+- Los mensajes de error deben tener un estilo visual claro en color rojo y cursiva.
+- Si existe algún error en los campos, el cálculo no debe realizarse hasta que sean corregidos.
+- Mantener intactos todos los IDs originales del formulario (txtIngresos, txtEgresos, txtMonto, txtPlazo, txtTasaInteres).

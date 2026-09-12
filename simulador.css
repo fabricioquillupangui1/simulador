@@ -162,4 +162,14 @@ button:active {
         font-size: 0.9rem;
         padding: 10px;
     }
+
+    /* Estilo para los mensajes de error de validación debajo de los inputs */
+.error-msg {
+    color: #ef4444; /* Rojo alerta */
+    font-style: italic; /* Cursiva requerida */
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
 }
