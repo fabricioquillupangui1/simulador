@@ -8,7 +8,7 @@ function calcularDisponible(ingresos, egresos) {
 
 //Calcular capacidad de pago (50% del disponible)
 function calcularCapacidadPago(montoDisponible) {
-    return montoDisponible * 0.50;
+    return montoDisponible * 0.30;
 }
 
 //Calcular interés simple (plazoAnios * monto * (tasa / 100))
