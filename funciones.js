@@ -36,3 +36,25 @@ function aprobarCredito(capacidadPago, cuotaMensual) {
         return false;
     }
 }
+
+
+function reiniciar() {
+    // Limpiar cajas de texto (inputs)
+    document.getElementById("txtIngresos").value = "";
+    document.getElementById("txtEgresos").value = "";
+    document.getElementById("txtMonto").value = "";
+    document.getElementById("txtPlazo").value = "";
+    document.getElementById("txtTasaInteres").value = "";
+
+    // Limpiar etiquetas de resultados (spans)
+    document.getElementById("spnDisponible").textContent = "";
+    document.getElementById("spnCapacidadPago").textContent = "";
+    document.getElementById("spnInteresPagar").textContent = "";
+    document.getElementById("spnTotalPrestamo").textContent = "";
+    document.getElementById("spnCuotaMensual").textContent = "";
+
+    // Restablecer el estado del crédito
+    let lblEstado = document.getElementById("spnEstadoCredito");
+    lblEstado.textContent = "ANALIZANDO...";
+    lblEstado.style.color = ""; // Vuelve al color por defecto del CSS
+}

@@ -39,5 +39,4 @@ function calcular() {
         lblEstado.style.color = "#ef4444"; // Rojo alerta
     }
 
-
 }
