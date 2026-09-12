@@ -8,5 +8,9 @@ function calcular() {
     let disponible = calcularDisponible(ingresos, egresos);
     document.getElementById("spnDisponible").textContent = "USD " + disponible.toFixed(2);
 
+    //Calcular capacidad de pago y mostrar en pantalla (Paso 4 y 5)
+    let capacidadPago = calcularCapacidadPago(disponible);
+    document.getElementById("spnCapacidadPago").textContent = "USD " + capacidadPago.toFixed(2);
+
     
 }
