@@ -27,5 +27,17 @@ function calcular() {
     let cuotaMensual = calcularCuotaMensual(totalPagar, plazoAnios);
     document.getElementById("spnCuotaMensual").textContent = cuotaMensual.toFixed(2);
 
+    //Analizar y aprobar/rechazar crédito
+    let esAprobado = aprobarCredito(capacidadPago, cuotaMensual);
+    let lblEstado = document.getElementById("spnEstadoCredito");
+
+    if (esAprobado) {
+        lblEstado.textContent = "CREDITO APROBADO";
+        lblEstado.style.color = "#22c55e"; // Verde éxito
+    } else {
+        lblEstado.textContent = "CREDITO RECHAZADO";
+        lblEstado.style.color = "#ef4444"; // Rojo alerta
+    }
+
 
 }
