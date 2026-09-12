@@ -1,3 +1,7 @@
 primer prompt de modificación de css y HTML
 
 "Actúa como diseñador gráfico senior experto en UI/UX corporativo para el sector financiero en Ecuador. Necesito que rediseñes el archivo simulador.css inspirándote en la identidad visual de una institución financiera moderna (por ejemplo, Produbanco). Utiliza una paleta de colores corporativa basada en azules oscuros institucionales (#0B2545 o #132238), blancos limpios y acentos en verde esmeralda profesional (#10B981) para estados aprobados y llamadas a la acción. Asegúrate de estructurar el formulario con una tarjeta centrada, sombras elegantes (box-shadow), bordes redondeados modernos, y tipografías limpias ." te adjunto la imagen de produbanco nombre images.png
+
+prompt 2 
+
+quiero que actues como el mejor profesional en desarrollo de software que le modifiques el archivo css y HTML para que sea responsive que se vea bien en el celular ya te envio el archivo css

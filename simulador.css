@@ -71,14 +71,18 @@ p {
     color: #334155;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #f1f8f4;
-    padding: 8px 10px;
+    padding: 10px 12px;
     border-radius: 6px;
+    gap: 8px;
 }
 
 span {
     font-weight: bold;
     color: #004d26;
+    text-align: right;
+    word-break: break-all;
 }
 
 .buttons {
@@ -118,15 +122,44 @@ button:active {
     background-color: #475569;
 }
 
-/* Media Query para pantallas pequeñas (responsivo) */
+/* ==========================================
+   MEJORAS DE RESPONSIVIDAD PARA CELULARES
+   ========================================== */
 @media (max-width: 480px) {
     body {
         align-items: flex-start;
-        padding: 10px;
+        padding: 0;
+        background-color: white; /* En móviles muy pequeños la tarjeta toma protagonismo total */
     }
+
     .container {
-        margin: 10px auto;
-        padding: 15px;
+        margin: 0 auto;
+        padding: 20px 15px;
         max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border-top: none;
+    }
+
+    /* Transformamos los botones de fila a columna para darles mayor área táctil */
+    .buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px; /* Mejor ergonomía táctil en pantallas touch */
+        font-size: 1.05rem;
+    }
+
+    /* Ajuste de tipografías y párrafos para evitar desbordes */
+    h1 {
+        font-size: 1.35rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 }
